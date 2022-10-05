@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealerAPI", "DealerAPI\DealerAPI.csproj", "{D72E52C6-F942-4125-B430-B6D898EEF4EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DealerAPI", "DealerAPI\DealerAPI.csproj", "{D72E52C6-F942-4125-B430-B6D898EEF4EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DealerAPI.Tests", "DealerAPI.Tests\DealerAPI.Tests.csproj", "{B1D00C1B-2C85-4ED4-A8D7-8337D3043799}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D72E52C6-F942-4125-B430-B6D898EEF4EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D72E52C6-F942-4125-B430-B6D898EEF4EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D72E52C6-F942-4125-B430-B6D898EEF4EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1D00C1B-2C85-4ED4-A8D7-8337D3043799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1D00C1B-2C85-4ED4-A8D7-8337D3043799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1D00C1B-2C85-4ED4-A8D7-8337D3043799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1D00C1B-2C85-4ED4-A8D7-8337D3043799}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
