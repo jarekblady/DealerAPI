@@ -23,6 +23,7 @@ namespace DealerAPI.Controllers
 
 
         [HttpGet]
+        [AllowAnonymous]
         public ActionResult<IEnumerable<DealerDto>> GetAll()
         {
             var dealersDtos = _dealerService.GetAll();           
@@ -30,7 +31,7 @@ namespace DealerAPI.Controllers
             return Ok(dealersDtos);
         }
         [HttpGet("{id}")]
-        //[AllowAnonymous]
+        [AllowAnonymous]
         public ActionResult<DealerDto> Get([FromRoute] int id)
         {
             var dealer = _dealerService.GetById(id);
