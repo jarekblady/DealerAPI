@@ -18,6 +18,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using DealerAPI.Models.Validators;
 
 namespace DealerAPI
 {
@@ -59,7 +62,7 @@ namespace DealerAPI
             });
 
 
-            services.AddControllers();
+            services.AddControllers().AddFluentValidation();
 
             services.AddDbContext<DealerDbContext>();
             services.AddScoped<DealerSeeder>();
@@ -73,6 +76,7 @@ namespace DealerAPI
             services.AddScoped<ErrorHandlingMiddleware>();
 
             services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
+            services.AddScoped<IValidator<RegisterUserDto>, RegisterUserDtoValidator>();
 
 
             services.AddSwaggerGen();
