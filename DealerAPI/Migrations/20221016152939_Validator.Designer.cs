@@ -3,14 +3,16 @@ using DealerAPI.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DealerAPI.Migrations
 {
     [DbContext(typeof(DealerDbContext))]
-    partial class DealerDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221016152939_Validator")]
+    partial class Validator
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

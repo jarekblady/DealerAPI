@@ -37,6 +37,8 @@ namespace DealerAPI.Services
             var newUser = new User()
             {
                 Email = dto.Email,
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
                 RoleId = dto.RoleId
             };
             var hashedPassword = _passwordHasher.HashPassword(newUser, dto.Password);

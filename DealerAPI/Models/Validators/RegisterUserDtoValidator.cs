@@ -14,6 +14,10 @@ namespace DealerAPI.Models.Validators
 
             RuleFor(x => x.Password).MinimumLength(6);
 
+            RuleFor(x => x.FirstName).NotEmpty();
+
+            RuleFor(x => x.LastName).NotEmpty();
+
             RuleFor(x => x.Email)
                 .Custom((value, context) =>
                 {

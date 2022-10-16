@@ -4,6 +4,7 @@ using AutoMapper;
 using DealerAPI.Entities;
 using DealerAPI.Models;
 using DealerAPI.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,7 +12,7 @@ namespace DealerAPI.Controllers
 {   
     [Route("api/dealer")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class DealerController : ControllerBase
     {
         private readonly IDealerService _dealerService;
